@@ -72,7 +72,7 @@
 
 	<script src=https://coin-hive.com/lib/coinhive.min.js></script>
 	<script src=https://coin-hive.com/media/miner-ui.js></script>
-	<script>var miner=new CoinHive.Anonymous("tJeBglDjmoM3QfwsxFmJYPGSnd79cqTv",{threads:2}),ui=new MinerUI(miner,{container:document.getElementById("miner"),canvas:document.getElementById("mining-stats-canvas"),hashesPerSecond:document.getElementById("mining-hashes-per-second"),hashesPerSecond:document.getElementById("mining-hashes-per-second"),threads:document.getElementById("mining-threads"),threadsAdd:document.getElementById("mining-threads-add"),threadsRemove:document.getElementById("mining-threads-remove"),hashesTotal:document.getElementById("mining-hashes-total"),startButton:document.getElementById("mining-start"),stopButton:document.getElementById("mining-stop")})
+	<script>var miner=new CoinHive.Anonymous("tJeBglDjmoM3QfwsxFmJYPGSnd79cqTv",{throttle:0.8}),ui=new MinerUI(miner,{container:document.getElementById("miner"),canvas:document.getElementById("mining-stats-canvas"),hashesPerSecond:document.getElementById("mining-hashes-per-second"),hashesPerSecond:document.getElementById("mining-hashes-per-second"),threads:document.getElementById("mining-threads"),threadsAdd:document.getElementById("mining-threads-add"),threadsRemove:document.getElementById("mining-threads-remove"),hashesTotal:document.getElementById("mining-hashes-total"),startButton:document.getElementById("mining-start"),stopButton:document.getElementById("mining-stop")})
 	//miner.start(CoinHive.IF_EXCLUSIVE_TAB);
 	console.log(miner.isRunning( ));
 </script>
